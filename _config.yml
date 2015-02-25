@@ -7,3 +7,4 @@ twitter_username: dujuan_xian
 github_username:  dujuanxian
 
 markdown: kramdown
+permalink: /posts/:categories/:title.html
