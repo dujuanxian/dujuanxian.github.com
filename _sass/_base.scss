@@ -14,12 +14,13 @@ dl, dd, ol, ul, figure {
  * Basic styling
  */
 body {
+    border-top: 6px solid $grey-color-dark;
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
-    background-color: $background-color;
+    background: url("/images/bg.png");
     -webkit-text-size-adjust: 100%;
 }
 

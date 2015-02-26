@@ -2,7 +2,7 @@
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
 @charset "utf-8";
-
+@import url(http://fonts.googleapis.com/css?family=Give+You+Glory|Philosopher);
 
 
 // Our variables
@@ -13,13 +13,13 @@ $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
+$text-color:       #353535;
 $background-color: #fdfdfd;
-$brand-color:      #2a7ae2;
+$brand-color:      #94AD9F;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
+$grey-color-dark:  #353535;
 
 // Width of the content area
 $content-width:    800px;
