@@ -203,3 +203,17 @@ pre {
         }
     }
 }
+
+
+.page-content {
+    padding: 30px+$spacing-unit 0;
+    width: 900px;
+    margin: 0 auto;
+    background: #fdfdfd;
+    box-shadow: 0 0 3px 0 rgba(0,0,0,.1);
+}
+
+.post-meta {
+    color: $meta-color;
+}
+

@@ -9,13 +9,16 @@
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
+$big-font-size:    20px;
 $base-line-height: 1.5;
 
 $spacing-unit:     30px;
 
 $text-color:       #353535;
 $background-color: #fdfdfd;
+$hover-background-color: rgba(213, 197, 197, 0.1);
 $brand-color:      #94AD9F;
+$meta-color:       #B4B4B4;
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
@@ -47,6 +50,9 @@ $on-laptop:        800px;
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
         "base",
-        "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "header",
+        "footer",
+        "home",
+        "post"
 ;

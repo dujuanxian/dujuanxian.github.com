@@ -1,0 +1,24 @@
+.home {
+    .category {
+        h2 {
+            border-bottom: 2px dotted #e5e5e5;
+            color: $meta-color;
+            font-family: 'Philosopher', $base-font-family;
+        }
+        .post {
+            .post-meta {
+                float: right;
+                font-size: $small-font-size;
+            }
+            .post-link {
+                display: block;
+                font-size: $big-font-size;
+            }
+            &:hover {
+                background: $hover-background-color;
+                padding: 25px 0 20px 30px;
+            }
+        }
+        margin-bottom: $spacing-unit;
+    }
+}
