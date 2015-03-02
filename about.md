@@ -4,8 +4,10 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+I am Juan, a Front-end developer at ThoughtWorks in Xi'an, China. Started a backend developer, Java leads me
+to the programming world. Web development attracts me. But to make a page full of messy content is not enough.
+I feel more interested in the front-end development. Luckily, the door opened and I started this board to draw
+my world up.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+Feel free to contact [me](mailto:jdu.xian@gmail.com) if you have any questions.
