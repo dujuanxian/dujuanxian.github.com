@@ -11,3 +11,5 @@ my world up.
 
 
 Feel free to contact [me](mailto:jdu.xian@gmail.com) if you have any questions.
+
+{% include comments.html %}
