@@ -6,17 +6,22 @@
             font-family: 'Philosopher', $base-font-family;
         }
         .post {
-            .post-meta {
-                float: right;
-                font-size: $small-font-size;
-            }
+            background: rgba(213, 197, 197, 0.1);
+            padding: 15px 20px 12px 20px;
+            margin-bottom: 10px;
             .post-link {
                 display: block;
-                font-size: $big-font-size;
-            }
-            &:hover {
-                background: $hover-background-color;
-                padding: 25px 0 20px 30px;
+                h3 {
+                    margin-bottom: 0;
+                }
+                .post-meta {
+                    float: right;
+                    font-size: $small-font-size;
+                    line-height: 2;
+                }
+                .post-link-title {
+                    font-size: $big-font-size;
+                }
             }
         }
         margin-bottom: $spacing-unit;

@@ -10,12 +10,14 @@ layout: default
       <h2>{{ category | first }}</h2>
       {% for posts in category %}
         {% for post in posts %}
-        <article class="post">
-          <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-          <h3>
-            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-          </h3>
-        </article>
+        {% if post.title %}
+          <article class="post">
+            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">
+              <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+              <h3 class="post-link-title">{{ post.title }}</h3>
+            </a>
+          </article>
+        {% endif %}
         {% endfor %}
       {% endfor %}
     </section>
