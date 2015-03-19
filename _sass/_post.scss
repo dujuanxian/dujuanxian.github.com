@@ -19,7 +19,7 @@
 
 .post-content {
   margin-bottom: $spacing-unit;
-
+  border-bottom: 2px dotted #e5e5e5;
   h2 {
     font-size: 28px;
 
@@ -41,6 +41,28 @@
 
     @include media-query($on-laptop) {
       font-size: 16px;
+    }
+  }
+}
+
+.post-footer {
+  margin-bottom: $spacing-unit;
+  a {
+    display: inline-block;
+    color: $brand-color;
+    &:hover {
+      font-size: 20px;
+      text-decoration: none;
+    }
+    &.next-post {
+      float: right;
+    }
+    i {
+      color: #828282;
+      font-style: normal;
+      &.icon-right-hand {
+        float: right;
+      }
     }
   }
 }
