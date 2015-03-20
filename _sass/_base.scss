@@ -16,7 +16,7 @@ dl, dd, ol, ul, figure {
 body {
     border-top: 6px solid $grey-color-dark;
     font-family: $base-font-family;
-    font-size: $base-font-size;
+    font-size: $small-font-size;
     line-height: $base-line-height;
     font-weight: 300;
     color: $text-color;
@@ -129,10 +129,10 @@ blockquote {
  */
 pre,
 code {
-    font-size: 15px;
+    font-size: $small-font-size;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: #EEF0EF;
 }
 
 code {
