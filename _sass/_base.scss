@@ -216,10 +216,10 @@ pre {
     &:before {
         content: " ";
         position: absolute;
-        width: 50px;
-        height: 50px;
+        width: $logo-size;
+        height: $logo-size;
         top: 0;
-        left: -50px;
+        left: -$logo-size;
         background: url("../images/me.png") 100% 70% no-repeat;
         background-size: cover;
         border-radius: 100%;
