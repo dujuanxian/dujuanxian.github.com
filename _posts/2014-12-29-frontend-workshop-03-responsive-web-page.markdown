@@ -21,6 +21,7 @@ target ÷ context = result
 Media Queries are used to look at the capability of the devices.
 
 ###Flexible Grid
+
 ####Flexible Font
 use `em`/`rem` as unit of font-size
 {% highlight css %}
@@ -41,6 +42,7 @@ img {
 {% endhighlight %}
 
 ###Media Queries
+
 ####Media type
 all, screen, print...
 {% highlight html %}
