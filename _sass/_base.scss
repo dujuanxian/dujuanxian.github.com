@@ -212,6 +212,21 @@ pre {
     margin: 0 auto;
     background: #fdfdfd;
     box-shadow: 0 0 3px 0 rgba(0,0,0,.1);
+    position: relative;
+    &:before {
+        content: " ";
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 0;
+        left: -50px;
+        background: url("../images/me.png") 100% 70% no-repeat;
+        background-size: cover;
+        border-radius: 100%;
+        border: 3px solid $brand-color;
+        box-sizing: border-box;
+        border-top-right-radius: 0;
+    }
 }
 
 .post-meta {
