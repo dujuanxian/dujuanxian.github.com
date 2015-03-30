@@ -9,6 +9,9 @@
   position: relative;
   margin: 0 auto;
   width: 100%;
+  @include media-query($phone) {
+    min-height: 110px;
+  }
 }
 
 .site-title {
@@ -25,6 +28,10 @@
   &,
   &:visited {
     color: $grey-color-dark;
+  }
+
+  @include media-query($phone) {
+    font-size: xx-large;
   }
 }
 

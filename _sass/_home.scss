@@ -18,9 +18,15 @@
                     float: right;
                     font-size: $small-font-size;
                     line-height: 2;
+                    @include media-query($phone) {
+                        display: none;
+                    }
                 }
                 .post-link-title {
                     font-size: $base-font-size;
+                    @include media-query($phone) {
+                        font-size: 14px;
+                    }
                 }
             }
         }

@@ -226,6 +226,13 @@ pre {
             left: 0;
             border-top-right-radius: 100%;
         }
+        @include media-query($phone) {
+            display: none;
+        }
+    }
+    @include media-query($phone) {
+        width: 92%;
+        padding: 40px 0;
     }
 }
 

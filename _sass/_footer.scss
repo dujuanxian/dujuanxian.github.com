@@ -9,18 +9,38 @@
   color: $grey-color;
   width: 80%;
   margin: 0 auto;
+  @include media-query($phone) {
+    width: 92%;
+  }
 }
 
 .contact-list {
   list-style: none;
   margin-left: 0;
+  @include media-query($phone) {
+    text-align: center;
+    margin-bottom: 0;
+  }
   i {
     color: #828282;
   }
   li {
+    cursor: pointer;
     @include media-query($tablet) {
       width: 50%;
       float: left;
+    }
+    @include media-query($phone) {
+      width: auto;
+      float: none;
+      display: inline-block;
+      margin-right: 5px;
+    }
+    span {
+      @include media-query($phone) {
+        display: none;
+        margin-right: 6px;
+      }
     }
   }
 }
@@ -47,16 +67,6 @@
   text-align: right;
   @include media-query($tablet) {
     width: 100%;
-    text-align: left;
+    text-align: center;
   }
 }
-
-@include media-query($phone) {
-  .footer-col {
-    float: none;
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
-  }
-}
-
-
