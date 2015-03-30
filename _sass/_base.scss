@@ -221,6 +221,11 @@ pre {
         &:hover {
             border-color: $meta-color;
         }
+        @include media-query($tablet) {
+            top: -52px;
+            left: 0;
+            border-top-right-radius: 100%;
+        }
     }
 }
 

@@ -17,6 +17,12 @@
   i {
     color: #828282;
   }
+  li {
+    @include media-query($tablet) {
+      width: 50%;
+      float: left;
+    }
+  }
 }
 
 .footer-col-wrapper {
@@ -27,33 +33,25 @@
 .footer-col {
   float: left;
   margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
 }
 
-.footer-col-1 {
-  width: -webkit-calc(35% - (#{$spacing-unit} / 2));
-  width:         calc(35% - (#{$spacing-unit} / 2));
+.footer-col-left {
+  width: 35%;
+  @include media-query($tablet) {
+    width: 100%;
+  }
 }
 
-.footer-col-3 {
-  width: -webkit-calc(65% - (#{$spacing-unit} / 2));
-  width:         calc(65% - (#{$spacing-unit} / 2));
+.footer-col-right {
+  width: 65%;
   text-align: right;
-}
-
-@include media-query($on-laptop) {
-  .footer-col-1 {
-    width: -webkit-calc(50% - (#{$spacing-unit} / 2));
-    width:         calc(50% - (#{$spacing-unit} / 2));
-  }
-
-  .footer-col-3 {
-    width: -webkit-calc(100% - (#{$spacing-unit} / 2));
-    width:         calc(100% - (#{$spacing-unit} / 2));
+  @include media-query($tablet) {
+    width: 100%;
+    text-align: left;
   }
 }
 
-@include media-query($on-palm) {
+@include media-query($phone) {
   .footer-col {
     float: none;
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
