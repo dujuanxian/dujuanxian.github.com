@@ -155,21 +155,13 @@ pre {
 /**
  * Wrapper
  */
-.wrapper {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
+.content-wrapper {
     margin-right: auto;
     margin-left: auto;
-    padding-right: $spacing-unit;
-    padding-left: $spacing-unit;
+    padding-right: 7%;
+    padding-left: 7%;
+    width: 86%;
     @extend %clearfix;
-
-    @include media-query($on-laptop) {
-        max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-        max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-        padding-right: $spacing-unit / 2;
-        padding-left: $spacing-unit / 2;
-    }
 }
 
 
@@ -208,11 +200,11 @@ pre {
 
 .page-content {
     padding: 30px+$spacing-unit 0;
-    width: 900px;
     margin: 0 auto;
     background: #fdfdfd;
-    box-shadow: 0 0 3px 0 rgba(0,0,0,.1);
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
     position: relative;
+    width: 80%;
     .logo {
         content: " ";
         position: absolute;

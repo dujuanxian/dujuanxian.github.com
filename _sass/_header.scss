@@ -8,7 +8,7 @@
   // Positioning context for the mobile navigation icon
   position: relative;
   margin: 0 auto;
-  width: 900px;
+  width: 100%;
 }
 
 .site-title {
@@ -29,7 +29,9 @@
 }
 
 .site-nav {
-  float: right;
+  width: 80%;
+  margin: 0 auto;
+  text-align: right;
   line-height: 50px;
 
   .menu-icon {
