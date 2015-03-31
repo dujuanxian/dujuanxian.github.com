@@ -24,9 +24,6 @@
                 }
                 .post-link-title {
                     font-size: $base-font-size;
-                    @include media-query($phone) {
-                        font-size: 14px;
-                    }
                 }
             }
         }
