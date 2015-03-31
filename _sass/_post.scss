@@ -46,6 +46,12 @@
       font-size: 16px;
     }
   }
+  img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    box-shadow: 1px 1px 4px #ccc;
+  }
 }
 
 .post-footer {
