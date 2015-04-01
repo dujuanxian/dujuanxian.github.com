@@ -45,12 +45,24 @@
     display: none;
   }
 
-  #search {
-    border: 1px solid #9BBFAB;
-    background: rgba(255,255,255,0.5);
-    font-size: $small-font-size;
-    padding: 10px;
-    font-weight: 300;
+  form {
+    position: relative;
+    display: inline-block;
+    #search {
+      border: 1px solid #9BBFAB;
+      background: rgba(255,255,255,0.5);
+      font-size: $small-font-size;
+      padding: 10px;
+      font-weight: 300;
+    }
+
+    i {
+      position: absolute;
+      top: 9px;
+      right: 10px;
+      font-size: 16px;
+      line-height: 2em;
+    }
   }
 
   @include media-query($phone) {
