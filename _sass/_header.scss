@@ -45,16 +45,12 @@
     display: none;
   }
 
-  .page-link {
+  #search {
     border: 1px solid #9BBFAB;
-    padding: 8px 10px 6px;
-    color: $text-color;
-    line-height: $base-line-height;
-
-    // Gaps between nav items, but not on the first one
-    &:not(:first-child) {
-      margin-left: 20px;
-    }
+    background: rgba(255,255,255,0.5);
+    font-size: $small-font-size;
+    padding: 10px;
+    font-weight: 300;
   }
 
   @include media-query($phone) {

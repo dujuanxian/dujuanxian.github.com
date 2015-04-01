@@ -1,0 +1,56 @@
+.swiftype-widget .autocomplete ul {
+  position: absolute;
+  right: 14px;
+  left: 8px;
+  top: 6px;
+  -webkit-border-radius: 0 !important;
+  -moz-border-radius: 0 !important;
+  -ms-border-radius: 0 !important;
+  -o-border-radius: 0 !important;
+  border-radius: 0 !important;
+  border-left: 1px solid $brand-color;
+  border-right: 1px solid $brand-color;
+  li {
+    border-bottom: 1px solid $brand-color !important;
+    border-top: none !important;
+    font-family: $base-font-family !important;
+    font-weight: 300 !important;
+    p.title {
+      font-family: $base-font-family !important;
+      font-weight: 300 !important;
+      color: $brand-color !important;
+      text-shadow: none !important;
+      em {
+        color: $brand-color !important;
+      }
+    }
+    &:first-child, &:last-child {
+      -webkit-border-radius: 0 !important;
+      -moz-border-radius: 0 !important;
+      -ms-border-radius: 0 !important;
+      -o-border-radius: 0 !important;
+      border-radius: 0 !important;
+    }
+    &.active {
+      background-color: $brand-color !important;
+      background: $brand-color !important;
+      -webkit-box-shadow: none !important;
+      -moz-box-shadow: none !important;
+      box-shadow: none !important;
+      color: white !important;
+      p.title {
+        color: white !important;
+        em {
+          color: white !important;
+        }
+      }
+      .sections {
+        text-shadow: none !important;
+        color: #999 !important;
+        em {
+          color: white !important;
+        }
+      }
+    }
+  }
+}
