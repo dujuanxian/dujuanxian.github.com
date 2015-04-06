@@ -13,7 +13,7 @@ no necessary to write native code.
 
 * Native components with Javascript
 * Easy to extend with custom native views and modules
-* Javascript version of CSS-layout with flexbox
+* Javascript version of CSS-layout with [flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
 * Live uploads in iOS simulator
 
 ### Quick setup
