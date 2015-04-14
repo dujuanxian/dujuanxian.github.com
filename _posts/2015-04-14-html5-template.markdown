@@ -33,25 +33,33 @@ This template won't fit all the websites, but will provide the basics.
 ```
 
 1. Set viewport will make the site full width on mobile
+
     `<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">`
 
 2. X-UA-Compatible meta tag make user to use latest version of IE or Chrome rendering engine if installed
+
     `<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">`
 
 3. Import your css in head stylesheet
+
     `<link rel="stylesheet" href="css/style.css">`
 
     and js in body
+
     `<script src="js/main.js"></script>`
 
 4. html5shiv allow blocked HTML5 element rendering as block at IE
+
     ```html
     <!--[if lt IE 9]>
         <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     ```
 
+    An easy way to make it support https is to eliminate 'http' or 'https' and just start with '//'
+
     set the CSS display property to block will securely correct behavior in older browsers
+
     ```html
     <style>
         article, aside, figure, footer, header, hgroup, menu, nav, section {
