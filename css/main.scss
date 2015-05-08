@@ -1,11 +1,6 @@
----
-# Only the main Sass file needs front matter (the dashes are enough)
----
 @charset "utf-8";
 @import url(http://fonts.googleapis.com/css?family=Give+You+Glory|Philosopher);
 
-
-// Our variables
 $base-font-family: Helvetica, Arial, sans-serif;
 $base-font-size:   16px;
 $small-font-size:  $base-font-size * 0.875;
@@ -28,32 +23,19 @@ $grey-color-dark:  #505454;
 $phone:            640px;
 $tablet:           768px;
 
-
-
-// Using media queries with like this:
-// @include media-query($on-palm) {
-//     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
-//     }
-// }
 @mixin media-query($device) {
     @media screen and (max-width: $device) {
         @content;
     }
 }
 
-
-
-// Import partials from `sass_dir` (defaults to `_sass`)
-@import
-        "base",
-        "syntax-highlighting",
-        "header",
-        "footer",
-        "home",
-        "fontello",
-        "post",
-        "swiftype",
-        "animated"
+@import "../_sass/base",
+        "../_sass/syntax-highlighting",
+        "../_sass/header",
+        "../_sass/footer",
+        "../_sass/home",
+        "../_sass/fontello",
+        "../_sass/post",
+        "../_sass/swiftype",
+        "../_sass/animated"
 ;
