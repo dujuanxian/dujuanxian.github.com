@@ -79,4 +79,4 @@ Martin的又一经典书籍，有Java版和C#版
 - [《众妙之门 - 网站重新设计之道》](https://book.douban.com/subject/20281463/)
 Smashing Magazine的众妙之门系列，绝对的经典，但是译本差强人意，还是建议买原版，从内容到印刷都无可挑剔。
 - [《Design systems》](https://www.smashingmagazine.com/printed-books/design-systems/)
-Smashing Magazine的新力作。还没来得及看，不过很多UX同事推荐，可以没有译本。
+Smashing Magazine的新力作。还没来得及看，不过很多UX同事推荐，可惜没有译本。
