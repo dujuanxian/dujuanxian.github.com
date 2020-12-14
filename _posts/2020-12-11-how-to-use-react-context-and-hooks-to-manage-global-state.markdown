@@ -43,8 +43,6 @@ const CommentProvider = ({ children }) => {
   const [state, dispatch] = useReducer(commentReducer, { comments: [] });
   return ( <CommentContext.Provider value={{ state, dispatch }}> {children} </CommentContext.Provider> );
 };
-
-export { CommentProvider, CommentContext };
 ```
 在 `<CommentProvider/>` 中，调用 useReducer Hook 来去注册 commentReducer（会在后面创建），将解构的 state 和 dispatch 函数通过 CommentContext.Provider 
 提供给子组件。
@@ -62,8 +60,6 @@ const App = () => (
     <CommentList />
   </CommentProvider>
 );
-
-export default App;
 ```  
 接下来，我们来看一下，如何在 `<CommentList />` 中去使用 Context.Provider 提供的 context 值。
 
@@ -85,8 +81,6 @@ function CommentList() {
     ))}
   </ul>);
 }
-
-export default CommentList;
 ```
 熟悉 React 的话应该清楚，通常在 useEffect Hook 中去处理 API 请求，来获取评论列表数据。在未使用 Context 对数据进行管理时，在组件内会直接通过组件内 state 
 来存取列表数据，然后触发组件的重新渲染。这里不同的是，我们通过 useContext 获取了全局的 state 数据，然后在 useEffect Hook 中，调用了 fetchComments Action，
@@ -96,11 +90,9 @@ export default CommentList;
 #### 构建 commentAction
 ```jsx
 const fetchComments = async (dispatch) => {
-  const response = await axios.get('https://jsonplaceholder.typicode.com/comments');
+  const response = await axios.get('https://jsonplaceholder.typicode.com/posts/1/comments');
   dispatch({ type: 'SET_COMMENTS', payload: response.data });
 }
-
-export { fetchComments };
 ``` 
 当异步获取评论列表数据后，便通过传入的 dispatch 方法来去发出一个更新评论列表的 'SET_COMMENTS' 的 Action，commentReducer 在接收到这个 Action 以后，便会从
 payload 中取出传递的评论列表数据，然后更新到 context 的全局状态中。
@@ -113,8 +105,6 @@ const commentReducer = (state, action) => {
   }
   return state;
 };
-
-export default commentReducer;
 ```
 需要注意的是，和 Redux 强调的一致，reducer 是一个纯函数，只根据传入的 Action 和 旧的 state，返回一个新的 state 值。context 拿到新的 state 后，便会对旧的 state
 进行替换。到此，一个完整的更新评论列表的数据流已经走完。
