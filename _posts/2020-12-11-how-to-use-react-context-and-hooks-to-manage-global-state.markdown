@@ -115,5 +115,5 @@ const commentReducer = (state, action) => {
 
 在实际项目中，需要注意 Context.Provider 中的嵌套关系，需要在合适的父节点提供 context 的值。可以通过UI或业务组件和状态之间的业务关系来去梳理。
 
-可以在 [https://github.com/react-context-with-hook-comments-demo](https://github.com/react-context-with-hook-comments-demo) 中查看代码的实现。
+可以在 [https://github.com/dujuanxian/react-context-with-hook-comments-demo](https://github.com/dujuanxian/react-context-with-hook-comments-demo) 中查看代码的实现。
 其中除了查看评论列表的功能，还包含创建评论的功能。
